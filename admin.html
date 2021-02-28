@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Demo</title>
+    <link rel="stylesheet" media="all" href="./assets_admin/admin.css" data-turbolinks-track="reload">
+    <script src="./assets_admin/admin.js" data-turbolinks-track="reload"></script>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <section class="list-table">
+          <form class="simple_form form-horizontal" id="new_admin_account_session" novalidate="novalidate" action="./admin_home.html" accept-charset="UTF-8" method="post">
+            <fieldset>
+              <legend>Login</legend>
+              <p>
+                <label class="email required" for="admin_account_session_email">
+                <abbr title="required">*</abbr> Email</label>
+              </p>
+              <div class="form-group email required admin_account_session_email">
+                <input class="form-control string email required" autocomplete="username" type="email" name="admin_account_session[email]" id="admin_account_session_email">
+              </div>
+              <p></p>
+              <p>
+                <label class="password required" for="admin_account_session_password"><abbr title="required">*</abbr> Password</label>
+              </p>
+              <div class="form-group password required admin_account_session_password">
+                <input class="form-control password required" autocomplete="current-password" type="password" name="admin_account_session[password]" id="admin_account_session_password"></div>
+              <p></p>
+              <input type="submit" name="commit" value="Login" class="btn btn-info" data-disable-with="Login">
+            </fieldset>
+          </form>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
