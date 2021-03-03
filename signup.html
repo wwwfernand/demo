@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     <title>Welcome | Demo</title>
+     <meta http-equiv="Cache-Control" content="no-cache">
+     <meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+     <link rel="stylesheet" href="css/vendors/grid.css">
+     <link rel="stylesheet" href="css/vendors/fonts/all.css">
+     <link rel="stylesheet" href="css/signup.css">
+
+     <title>Welcome | Demo</title>
+</head>
+<body>
+
+<header>
+
+		<nav class="clearfix">
+               <div class="logo-box">
+                    <a class="logo-link" href="./home.html">
+     			<img src="https://www.redhat.com/cms/managed-files/Logo-redhat-color-375.png" alt="Logo" class="logo">
+                    </a>
+               </div>
+
+               <input type="checkbox" id="check" class="check">
+               <label for="check" class="check-btn"> <i class="fas fa-bars"></i> </label>
+			<ul class="navbar">
+				<li><a href="./home.html">Home</a></li>
+				<li><a href="./puzzles.html">Puzzles</a></li>
+				<li><a href="./stories.html">Stories</a></li>
+				<li><a href="./goods.html">Goods</a></li>
+				<li class="dropdown-link">Others
+                         <ul class="dropdown-menu">
+                              <li><a href="./story_show.html">Under The Sea</a></li>
+                              <li><a href="./story_show.html">Middle The Sea</a></li>
+                              <li><a href="./goods_show.html">Ovver The Sea</a></li>
+                         </ul>
+                    </li>
+			</ul>
+		</nav>
+</header>
+
+<main>
+     <section class="signup-section">
+
+          <div class="row">
+          <!-- The row class name comes form the grid.css file in vendors folder in css folder. -->
+
+               <form class="signup-form" action="./home.html" accept-charset="UTF-8" method="post">
+
+                    <div class="row div-padding">
+                         <div class="col span-1-of-3 u-margin-top-v-small">
+                              <label for="name">Name</label>
+                         </div>
+
+                         <div class="col span-2-of-3">
+                              <input type="text" name="name" id="name" placeholder="*Full Name" required>
+                         </div>
+                    </div>
+
+                    <div class="row div-padding">
+                         <div class="col span-1-of-3 u-margin-top-v-small">
+                              <label for="email">Email</label>
+                         </div>
+
+                         <div class="col span-2-of-3">
+                              <input type="email" name="email" placeholder="*Your Email" required>
+                         </div>
+                    </div>
+
+                    <div class="row div-padding">
+                         <div class="col span-1-of-3 u-margin-top-v-small">
+                              <label for="password">Password</label>
+                         </div>
+
+                         <div class="col span-2-of-3">
+                              <input type="password" name="password" placeholder="*Password" required>
+                         </div>
+                    </div>
+
+                    <div class="row div-padding">
+                         <div class="col span-1-of-3 u-margin-top-v-small">
+                              <label for="confirm-password">Confirm Password</label>
+                         </div>
+
+                         <div class="col span-2-of-3">
+                              <input type="password" name="confirm-password" placeholder="*Confirm Password" required>
+                         </div>
+                    </div>
+
+                    <div class="row">
+                         <div class="col span-1-of-3 u-margin-top-v-small">
+                              <label for="confirm-password">&nbsp;</label>
+                         </div>
+
+                         <div class="col span-2-of-3 button-div">
+                              <button type="submit" name="button">Create</button>
+                         </div>
+                    </div>
+
+                    <div class="signin-div">
+                         Already have an account? <a href="/signup#">Sign In</a>
+                    </div>
+
+               </form>
+          </div>
+
+     </section>
+
+     <footer>
+
+          <ul class="footer-links">
+               <li><a href="./home.html">Home</a></li>
+               <li><a href="./contact.html">Contact Us</a></li>
+          </ul>
+
+          <div class="copyright-text">
+               <p>Copyright &copy; Demo. All Rights Reserved.</p>
+          </div>
+
+     </footer>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
