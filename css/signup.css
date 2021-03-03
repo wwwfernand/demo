@@ -1,0 +1,302 @@
+*,
+*::before,
+*::after {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+html {
+     font-size: 62.5%;
+}
+
+body {
+     box-sizing: inherit;
+     font-size: 2rem;
+     font-family: sans-serif;
+     font-weight: 300;
+     color: #eee;
+     background-color: #989898;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.row {
+     width: 90%;
+     margin: 0 auto;
+}
+
+a {
+     text-decoration: none;
+}
+
+/* Helper Classes */
+
+.u-margin-top-v-small {
+     margin-top: 1.25rem;
+}
+
+/*--------------------------*/
+/* The navigation bar */
+/*--------------------------*/
+
+nav {
+     background-color: #01a6f0;
+}
+
+.logo-box {
+     display: inline-block;
+     height: 4rem;
+     width: 13.7rem;
+     margin-top: 2rem;
+}
+
+.logo {
+     width: 100%;
+}
+
+.navbar {
+     list-style: none;
+     float: right;
+     margin-right: 10rem;
+     margin-top: 2.6rem;
+     margin-bottom: .5rem;
+}
+
+.navbar li {
+     display: inline-block;
+     padding: 1rem 1rem;
+}
+
+.navbar li:hover {
+     background-color: #01A6FE;
+}
+
+.navbar li a {
+     color: #fff;
+}
+
+/* Dropdown menu */
+
+.dropdown-link {
+     cursor: pointer;
+}
+
+.dropdown-menu {
+     position: absolute;
+     background-color: #01a6f0;
+     visibility: hidden;
+}
+
+.dropdown-link:hover > .dropdown-menu {
+     visibility: visible;
+}
+
+/* Responsive nav bar */
+
+.check-btn {
+     font-size: 3rem;
+     color: #fff;
+     float: right;
+     line-height: 8rem;
+     margin-right: 4rem;
+     cursor: pointer;
+     display: none;
+}
+
+.check {
+     display: none;
+}
+
+/*--------------------------*/
+/* Signup Form */
+/*--------------------------*/
+
+.signup-section {
+     padding: 8rem 0;
+}
+
+.signup-form {
+     width: 60%;
+     margin: 0 auto;
+}
+
+.signup-form label {
+     font-size: 1.8rem;
+}
+
+.signup-form input {
+     font-size: 1.5rem;
+     color: #333;
+     padding: .8rem 2rem;
+     outline: 0;
+     border: 0;
+     border-radius: 20rem;
+     width: 80%;
+     background-color: #f5fefd;
+}
+
+.div-padding {
+     padding: 1.2rem;
+}
+
+.button-div {
+     margin-top: 1rem;
+}
+
+.button-div button {
+     display: inline-block;
+     padding: 1rem 3rem;
+     border: 1px solid #ffba01;
+     background-color: #ffba01;
+     border-radius: 200px;
+     transition: all .2s;
+     text-transform: uppercase;
+     font-size: 1.8rem;
+     color: #fff;
+}
+
+.button-div button:hover {
+     background-color: #f7b400;
+     border: 1px solid #f7b400;
+     cursor: pointer;
+}
+
+.signin-div {
+     margin-left: 5rem;
+     margin-top: 2rem;
+     font-size: 1.8rem;
+}
+
+.signin-div a:link,
+.signin-div a:visited {
+     color: #01a6f0;
+}
+
+.signin-div a:hover,
+.signin-div a:active {
+     text-decoration: underline;
+}
+
+/*--------------------------*/
+/* Footer Section */
+/*--------------------------*/
+
+footer {
+     background-color: #232323;
+     padding: 2% 10%;
+}
+
+.footer-links {
+     list-style: none;
+}
+
+.footer-links li {
+     display: inline-block;
+     margin: 0 1rem;
+}
+
+.footer-links li a {
+     color: #eee;
+     font-size: 1.5rem;
+}
+
+.copyright-text {
+     font-size: 1.2rem;
+     text-align: center;
+}
+
+
+/* Queries */
+
+@media (max-width: 820px) {
+     html {
+          font-size: 55%;
+     }
+
+     .row {
+          width: 100%;
+     }
+
+     .dropdown-menu {
+          position: relative;
+          visibility: hidden;
+     }
+
+     .dropdown-menu:active {
+          visibility: visible;
+     }
+
+     .dropdown-menu {
+          background-color: #2c3e50;
+     }
+
+     .signup-section {
+          padding: 4rem;
+     }
+
+     .div-padding {
+          padding: 0;
+          margin-bottom: 2rem;
+     }
+
+     .signup-form input {
+          font-size: 1.5rem;
+          width: 100%;
+          margin-top: .6rem;
+     }
+
+     footer {
+          position: fixed;
+          width: 100%;
+          bottom: 0;
+     }
+
+}
+
+@media (max-width: 780px) {
+      .check-btn {
+           display: block;
+      }
+
+      .navbar {
+           position: fixed;
+           width: 100%;
+           height: 130vh;
+           background-color: #2c3e50;
+           top: 5.4rem;
+           left: -100%;
+           text-align: center;
+           transition: all .5s;
+      }
+
+      .navbar li {
+           display: block;
+           background-color: #2c3e50;
+      }
+
+      .navbar li:hover {
+           background-color: #2c3e50;
+      }
+
+      .navbar li a:hover, .navbar li a:active {
+           background: none;
+           color: #0082e6;
+      }
+
+      .check:checked ~ .navbar {
+           left: 0;
+      }
+
+      .check:checked - section {
+           margin-top: 100rem;
+      }
+
+}
